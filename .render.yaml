@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: secure-password-manager
+    env: python
+    buildCommand: ""
+    startCommand: python app.py

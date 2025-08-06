@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container mt-5">
+  <h2 class="mb-4">Add New Password</h2>
+  <form method="post">
+    <div class="mb-3">
+      <input name="label" class="form-control" placeholder="Label" required>
+    </div>
+    <div class="mb-3">
+      <input name="password" type="password" class="form-control" placeholder="Password" required>
+    </div>
+    <div class="mb-3">
+      <input name="private_key" type="password" class="form-control" placeholder="Private Key" required>
+    </div>
+    <div class="mb-3">
+      <input name="script_password" type="password" class="form-control" placeholder="Script Password" required>
+    </div>
+    <button type="submit" class="btn btn-success">Save Password</button>
+    <a href="/dashboard" class="btn btn-link">Cancel</a>
+  </form>
+</div>
+{% endblock %}
+
